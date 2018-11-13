@@ -1,0 +1,98 @@
+
+{%extends "layout.html" %}
+
+{% block title %} Login {% endblock%}
+{% block body %}
+<link rel="stylesheet" href="{{url_for('static', filename='css/j-pro.css')}}">
+
+<article class="heading-component">
+  <div class="heading-component-inner">
+    <h5 class="heading-component-title">Main
+    </h5>
+    <div class="pull-right page-header-breadcrumb">
+    <ul class="breadcrumb-title">
+    <li class="breadcrumb-item">
+    <a href="index.html">
+    <i class="icofont icofont-home"></i>
+    </a>
+    </li>
+    <li class="breadcrumb-item"><a href="#!">Ready To Use</a>
+    </li>
+    <li class="breadcrumb-item"><a href="#!">Login Form</a>
+    </li>
+    </ul>
+    </div>
+  </div>
+</article>
+
+
+<div class="page-body">
+<div class="row">
+<div class="col-sm-12">
+
+<div class="card">
+<div class="card-header">
+<h5>Login From Here</h5>
+<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit</span>
+<div class="card-header-right">
+<i class="icofont icofont-rounded-down"></i>
+<i class="icofont icofont-refresh"></i>
+<i class="icofont icofont-close-circled"></i>
+</div>
+</div>
+<div class="card-block">
+<div class="j-wrapper j-wrapper-400">
+<form action="http://html.codedthemes.com/mash-able/dark/j-pro/php/action.php" method="post" class="j-pro" id="j-pro" novalidate="">
+
+<div class="j-content">
+
+<div class="j-unit">
+<div class="j-input">
+<label class="j-icon-right" for="login">
+<i class="icofont icofont-ui-user"></i>
+ </label>
+<input id="login" name="login" placeholder="your login..." type="text">
+</div>
+</div>
+
+
+<div class="j-unit">
+<div class="j-input">
+<label class="j-icon-right" for="password">
+<i class="icofont icofont-lock"></i>
+</label>
+<input id="password" name="password" placeholder="your password..." type="password">
+<span class="j-hint">
+<a href="#" class="j-link">Forgot password?</a>
+</span>
+</div>
+</div>
+
+
+<div class="j-unit">
+
+<div class="g-recaptcha" data-sitekey="6LeV7gwUAAAAAKOX-B12lNcg1ids8dFylMP6XihO"></div>
+
+
+</div>
+
+
+<div class="j-response"></div>
+
+</div>
+
+<div class="j-footer">
+<button type="submit" class="btn btn-primary">Sign in</button>
+</div>
+
+</form>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+
+
+{% endblock%}
