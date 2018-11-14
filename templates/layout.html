@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="{{url_for('static', filename='css/fonts.css')}}">
     <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
     <link rel="stylesheet" href="{{url_for('static', filename='css/mash-style.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/icofont.css')}}">
 </head>
   <body>
     <style>
@@ -47,9 +48,13 @@
                 <div class="rd-navbar-main-container container">
                   <!-- RD Navbar Nav-->
                   <ul class="rd-navbar-nav">
-                    <li class="rd-nav-item active"><a class="rd-nav-link" href="">Home</a>
+                    <li class="rd-nav-item active"><a class="rd-nav-link" href="{{url_for('index')}}">Home</a>
                     </li>
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="about-us.html">About Us</a>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="">About Us</a>
+                    </li>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="{{url_for('login')}}">Login</a>
+                    </li>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="{{url_for('register')}}">Register</a>
                     </li>
                     <li class="rd-nav-item rd-navbar--has-dropdown rd-navbar-submenu"><a class="rd-nav-link" href="news.html">News</a><span class="rd-navbar-submenu-toggle"></span>
                       <!-- RD Navbar Dropdown-->
@@ -107,10 +112,10 @@
           <div class="container">
             <div class="layout-justify">
               <!-- Rights-->
-              <p class="rights"><span>Atletico FC</span><span>&nbsp;©&nbsp;</span><span class="copyright-year">2018</span><span>.&nbsp;</span><a class="link-underline" href="privacy-policy.html">Privacy Policy</a></p>
+              <p class="rights"><span>Project 2 Chat</span><span>&nbsp;©&nbsp;</span><span class="copyright-year">2018</span><span>.&nbsp;</span><a class="link-underline" href="privacy-policy.html">Privacy Policy</a></p>
               <nav class="nav-minimal">
                 <ul class="nav-minimal-list">
-                  <li class="active"><a href="index.html">Home</a></li>
+                  <li class="active"><a href="{{url_for('index')}}">Home</a></li>
                 </ul>
               </nav>
             </div>
@@ -123,5 +128,6 @@
     <script>
 
     </script>
+    {% block js %} {% endblock %}
   </body><!-- Google Tag Manager -->
 </html>
